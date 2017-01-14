@@ -1,0 +1,13 @@
+<ul id="post-list">
+	{{#foreach posts}}
+	    <li class="{{post_class}}">
+	        {{!-- <i class="icon-idea"></i> --}}
+	        <a href="{{url}}">
+	            <aside class="dates">{{date format="MMM DD"}}</aside>
+	        </a>
+	        <a href="{{url}}">{{title}} <h2>{{meta_description}}</h2></a>
+	    </li>
+	{{/foreach}}
+</ul>
+
+{{pagination}}

@@ -1,0 +1,13 @@
+<div class="profile">
+    <section id="wrapper">
+        <header id="header">
+            {{#if @blog.logo}}
+                <a href="{{@blog.url}}">
+                    <img id="avatar" src="{{@blog.logo}}" alt="{{@blog.title}}" />
+                </a>
+            {{/if}}
+            <h1>{{@blog.title}}</h1>
+            <h2>{{@blog.description}}</h2>
+        </header>
+    </section>
+</div>

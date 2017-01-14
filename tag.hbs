@@ -1,0 +1,18 @@
+{{!< default}}
+{{#tag}}
+    <div class="profile">
+        <section id="wrapper">
+            <header id="header">
+                <h1>{{name}}</h1>
+                <h2>
+                    {{#if description}}
+                        {{description}}
+                    {{else}}
+                        A {{../pagination.total}}-post collection
+                    {{/if}}
+                </h2>
+            </header>
+        </section>
+    </div>
+{{/tag}}
+{{> "loop"}}

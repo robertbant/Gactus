@@ -1,0 +1,38 @@
+{{!< default}}
+
+{{#post}}
+
+<article class="{{post_class}}">
+    <header>
+        <h1>{{title}}</h1>
+        <div class="post-tag">
+            <span>{{tags prefix="on "}}</span>
+        </div>
+        <h2 class="headline">{{date format="MMMM DD YYYY"}}</h2>
+    </header>
+    <section id="post-body">
+        {{content}}
+    </section>
+</article>
+<footer id="post-meta" class="clearfix">
+    {{#author}}
+        <a href="{{url}}">
+            {{#if image}}
+                <img class="avatar" src="{{image}}" alt="{{name}}">
+            {{/if}}
+            <div>
+                <span class="dark">{{ name }}</span>
+                <span>{{ bio }}</span>
+            </div>
+        </a>
+    {{/author}}
+
+    <section id="sharing">
+        {{> "share"}}
+    </section>
+</footer>
+<div class="archive readmore">
+    <h3>Comments</h3>
+    {{> "disqus"}}
+</div>
+{{/post}}
