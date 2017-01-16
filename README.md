@@ -18,7 +18,7 @@ Go to tab Settings > Code Injection and add script in `Blog Header`
 
 ## To do
 
-- ~~[ ] Disqus will enable via code injection~~
+- [ ] ~~Disqus will enable via code injection~~
 - [ ] Response devices
 - [ ] Add ci auto release
 
